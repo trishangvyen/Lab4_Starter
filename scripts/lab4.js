@@ -33,7 +33,7 @@ function discountPrices(prices, discount) {
     let discounted = []
     let length = prices.length;
 
-    if (prices.length === 0 || typeof prices === 'object' || typeof discount !== 'number') {
+    if (prices.length === 0 || typeof prices !== 'object' || typeof discount !== 'number') {
         return false;
     }
 
